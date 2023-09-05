@@ -1,0 +1,7 @@
+{
+	"fmt": {
+		"useTabs": true,
+		"semiColons": false,
+		"indentWidth": 4
+	}
+}
