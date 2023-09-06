@@ -1,20 +1,24 @@
-import { build } from "https://deno.land/x/esbuild/mod.js"
+import { build } from "https://deno.land/x/esbuild@v0.19.2/mod.js"
 import { SolidPlugin } from "../mod.ts"
 
 const res = await build({
 	entryPoints: [
-		"./test/App.jsx",
+		"./test/App.tsx",
 	],
 	format: "esm",
 	target: "esnext",
 	jsx: "preserve",
 	plugins: [
-		SolidPlugin,
+		SolidPlugin({
+			// deno-lint-ignore no-explicit-any
+			generate: Deno.args[0] as any,
+			hydrateable: Boolean(Deno.args[1])
+		}),
 	],
-	write: false,
+	write: false
 })
 
-for (let out of res.outputFiles) {
+for (const out of res.outputFiles) {
 	console.log(out.text)
 }
 

@@ -10,4 +10,4 @@ goofy aah ESBuild plugin which transforms Solid's JSX/TSX to Plain Javaẞheibe.
 Look at [build.ts](./test/build.ts).
 
 # License
-MIT License, just loot at [LICENSE](./LICENSE).
+MIT License, just look at [LICENSE](./LICENSE).
