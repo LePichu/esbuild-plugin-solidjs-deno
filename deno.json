@@ -7,5 +7,6 @@
 		"useTabs": true,
 		"semiColons": false,
 		"indentWidth": 4
-	}
+	},
+	"importMap": "./import_map.json"
 }
