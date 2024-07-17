@@ -6,7 +6,10 @@ const res = await build({
 	entryPoints: [
 		"./test/App.tsx",
 	],
-	bundle: Boolean(Deno.args[1]),
+	// external: [
+	// 	"solid-js",
+	// 	"solid-js/web"
+	// ],
 	format: "esm",
 	target: "esnext",
 	jsx: "preserve",
@@ -14,7 +17,7 @@ const res = await build({
 		SolidPlugin({
 			// deno-lint-ignore no-explicit-any
 			generate: Deno.args[0] as any,
-			hydrateable: Boolean(Deno.args[1])
+			hydratable: Deno.args[1] === "true" ? true : false
 		}),
 		// @ts-ignore "Hope it works"
 		httpImports()

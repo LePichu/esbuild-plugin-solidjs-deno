@@ -1,6 +1,6 @@
 {
     "imports": {
-        "solid-js": "https://esm.sh/stable/solid-js@1.8.5/es2022/solid-js.development.js",
-        "solid-js/web": "https://esm.sh/stable/solid-js@1.8.5/es2022/web.development.js"
+        "solid-js": "https://esm.sh/stable/solid-js/es2022/solid-js.development.js",
+        "solid-js/web": "https://esm.sh/stable/solid-js/es2022/web.development.js"
     }
 }

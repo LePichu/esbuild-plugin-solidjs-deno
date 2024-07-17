@@ -6,7 +6,7 @@ import { type Plugin } from "https://deno.land/x/esbuild@v0.19.2/mod.js"
 
 export interface SolidPluginOptions {
 	generate?: "dom" | "ssr" | "hydrate"
-	hydrateable?: boolean
+	hydratable?: boolean
 }
 
 export function SolidPlugin(options: SolidPluginOptions = {}): Plugin {

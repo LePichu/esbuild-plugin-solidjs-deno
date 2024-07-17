@@ -2,3 +2,5 @@
 .idea
 
 deno.lock
+output/*
+output
